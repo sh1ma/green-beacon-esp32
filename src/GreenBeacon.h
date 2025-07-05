@@ -24,7 +24,7 @@ private:
   char payload[13];
   BLEAdvertisementData advData;
   BLEAdvertising *advertising;
-  std::string getAdvPacket();
+  String getAdvPacket();
   bool adv_on;
 
 public:

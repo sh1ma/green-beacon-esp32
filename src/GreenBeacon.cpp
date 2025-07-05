@@ -105,9 +105,9 @@ void GreenBeacon::init(const String device_name)
   setMessage("");
 }
 
-std::string GreenBeacon::getAdvPacket()
+String GreenBeacon::getAdvPacket()
 {
-  return std::string((char *)&rawData, sizeof(rawData));
+  return String((char *)&rawData, (unsigned char)sizeof(rawData));
 }
 
 void GreenBeacon::setMessage(const String message)
